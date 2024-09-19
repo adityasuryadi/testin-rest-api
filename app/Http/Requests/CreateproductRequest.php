@@ -28,8 +28,8 @@ class CreateproductRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'price'=>'required',
-            'stock'=>'required'
+            'price'=>'required|numeric|min:100',
+            'stock'=>'required|numeric|min:1'
         ];
     }
 
@@ -38,7 +38,12 @@ class CreateproductRequest extends FormRequest
         return [
             'name.required' => 'Nama harus diisi',
             'price.required'=>'Harga harus diisi',
-            'stock.required'=>'Stok harus diisi'
+            'price.numeric'=>'Harga harus angka',
+            'price.min'=>'Minimal harga tidak terpenuhi',
+            'stock.min'=>'Minimal stock tidak terpenuhi',
+            'stock.required'=>'Stok harus diisi',
+            'stock.numeric'=>'stok harus angka'
+
         ];
     }
 
