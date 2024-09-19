@@ -1,0 +1,81 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "rest-api",
+    "collectionId": "ed4adc7e-3721-49df-bf7b-bf75f40ad3d9",
+    "dateExported": "2024-09-19T13:04:18.015Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "04fea43c-addc-4e55-bf87-c18c1b4bf229",
+            "colId": "ed4adc7e-3721-49df-bf7b-bf75f40ad3d9",
+            "containerId": "",
+            "name": "create product",
+            "url": "{{base_url}}/api/product",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-19T12:57:19.753Z",
+            "modified": "2024-09-19T13:03:00.295Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"susu\",\n  \"price\":2500,\n  \"stock\":10\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b1efa854-7308-4d3d-b409-8a63275a11dc",
+            "colId": "ed4adc7e-3721-49df-bf7b-bf75f40ad3d9",
+            "containerId": "",
+            "name": "find product",
+            "url": "{{base_url}}/api/product/{{product_id}}",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-09-19T12:57:28.653Z",
+            "modified": "2024-09-19T13:01:10.364Z",
+            "headers": []
+        },
+        {
+            "_id": "19d77717-198d-4269-b90e-e983a37ab4eb",
+            "colId": "ed4adc7e-3721-49df-bf7b-bf75f40ad3d9",
+            "containerId": "",
+            "name": "delete product",
+            "url": "{{base_url}}/api/product/{{product_id}}",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-09-19T12:57:35.177Z",
+            "modified": "2024-09-19T13:01:34.107Z",
+            "headers": []
+        },
+        {
+            "_id": "490eee18-e7e1-4779-bded-c15c681a5e79",
+            "colId": "ed4adc7e-3721-49df-bf7b-bf75f40ad3d9",
+            "containerId": "",
+            "name": "list product",
+            "url": "{{base_url}}/api/products",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-09-19T12:57:49.798Z",
+            "modified": "2024-09-19T13:01:45.086Z",
+            "headers": []
+        },
+        {
+            "_id": "46d82313-cd63-466c-ad52-b4592e9b411c",
+            "colId": "ed4adc7e-3721-49df-bf7b-bf75f40ad3d9",
+            "containerId": "",
+            "name": "edit product",
+            "url": "{{base_url}}/api/product/{{product_id}}",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-09-19T12:58:01.129Z",
+            "modified": "2024-09-19T13:03:27.288Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"susu kaleng\",\n  \"price\":2500,\n  \"stock\":10\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Jp8B77yeoQaG2LcES6Zhb5g7znTIYhUuLPxfocByiTMixKpu7Oz7s9ON68zugRMqvDAoSeUuR6ppTPtwVCd8ig"
+}
